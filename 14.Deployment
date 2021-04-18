@@ -1,0 +1,54 @@
+DEPLOYMENT :: INTRODUCTION TO PRODUCTION
+
+In this part of the lecture we will be deploying on cloud.
+
+What is Cloud ??
+
+Cloud is similar to our machine which are using for development right now, its just
+that it is located somewhere remotely and it has an internet access and some openly 
+available ports, so that people from across the world can access it. A machine which is
+accessible publically is a cloud. 
+
+Right now our system at home , is behind a router which is interacting with the 
+outer world with help of a tower which is connected to a internet via leaseline.
+This router can also hold on to multiple computers, but your computer doesnot have 
+a public address to which it can be accessed. Every one who needs to access it, 
+will access it via this router. 
+
+
+Now consider a computer which is present remotely and is directly connected to the 
+internet and it has its own IP address. So whenever we will be accessing this IP 
+address we will be bydefault accessing the port no. 80 of this machine. This is my 
+cloud then, a machine which is accessible publically.
+
+
+We can do this with your router also, router at homes will have a variable IP address
+whenever we switch it and switch off its IP address will change. But you can buy a 
+static IP address. And you can route all traffic which is coming to that specific 
+IP address to a computer which has some open port. Yes you can open some ports of 
+your pc and host an website publically. 
+
+
+Who gives us this machine ??
+
+There are various service providers, AWS, GCP, DIGITAL OCEAN , HEROKU.
+Every one of these has multiple set of features. The one we will be studying is 
+AWS for now. 
+
+On AWS , we will taking up an Ubuntu machine, yes mostly servers are based on 
+ubuntu and we will be setting up our code over there. Just like you set it up 
+in your pc. We are using windows so we need to find commands to install ndoejs
+ubuntu, redis on ubuntu and some more tools which we would be using. 
+
+
+STEPS :
+
+1) We will be purchasing a free tier machine. We need to have a machine and 
+   set it up. There is concept of shared machine, if you would have used Vmware
+   and any virtual environment where in on one OS we can run another OS,multple 
+   of them. So will be using a shared machine. We wont be knwoing that it is 
+   shared machine. 
+
+2) We will be logging into the machine, SSH and installing the tools.
+
+3) 

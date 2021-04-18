@@ -1,0 +1,45 @@
+Routes is the entry point of all the request from the browser . It is the dictionary
+or the place from where you get to know which controller function or action needs
+to be called.
+
+Root Level Routes:
+/home
+/about
+/contact
+
+Set of URLs which have common part in them:
+/users/profile
+users/edit
+users/create/
+
+So if they all point to users then take me to another Route file
+users.js where all these three(3) can be found. This is why we divide 
+the routes.
+
+
+
+That function which we called as controller is actually a action That
+we want to take place for that particular route . SO group of actions
+together is called as controller. Many actions in one single folder.
+When we are developing our project on a large scale then controller is
+a set of actions.
+
+
+STEPS:
+1) We created a router 1st
+2) That router is now accessing the home_controller which has an exported function home
+3) That home function is now accessible in route folder's index.js
+4) Becoz we required the home_controller inside the index.js of route
+
+
+
+
+Every time we create controllers action and we want it to be \
+accesible we need to create a route for it.
+
+
+Whenever a request is send from from the browser it first goes to index.js
+file of app, where there is already marked that a certain router will be used
+for any request which comes. Now after that any request which comes to home page 
+goes to home_controller.home, any request to /users goes to users route, where further
+mapping is done
